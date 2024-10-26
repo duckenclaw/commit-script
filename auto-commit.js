@@ -47,7 +47,7 @@ const commitAndPush = async () => {
 };
 
 // Schedule a task to run every day at 2 PM (or choose your desired interval)
-cron.schedule('0 * * * *', () => {
+cron.schedule('0 12 * * *', () => {
     console.log('Running scheduled commit...');
     commitAndPush();
 });
